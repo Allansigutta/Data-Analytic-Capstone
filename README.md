@@ -1,1 +1,10 @@
 # Data-Analytic-Capstone
+The dataset utilized in this analysis consists of 1,200 simulated transactional retail sales records spanning a three-year period from January 2022 to December 2024. The data captures key operational variables for each transaction, including the transaction date, sales region (North, South, East, West), product category (Electronics, Clothing, Food, Home), units sold, unit price, gross revenue, and applied discount percentage. The objective of this report is to evaluate regional performance, identify structural sales patterns, assess the predictive capability of a supervised machine learning model to forecast net revenue, and provide actionable, data-driven recommendations to maximize future profitability.
+
+## 2. Key Findings
+* **Regional Sales are Steady and stable ( Chart 1 & Chart 3):** Based on my line chart and box plot, sales performance across all four regions is quite stable. The East and West regions regularly bring in higher total monthly net revenue, but individual transaction sizes look almost identical across all regions.
+* **Product Categories Sell Similar Quantities ( Chart 2):** Looking at the bar chart, all four categories (Clothing, Electronics, Food, and Home) average around 200 units sold per transaction. No single product type sells way more volume than the others.
+* **Unit Price Drives Revenue, Not Quantity( Chart 4 & Chart 5):** From the scatter plot and correlation heatmap, unit price has a huge positive correlation with net revenue (0.93). On the other hand, the number of units sold has a much lower correlation (0.26). This means setting higher prices brings in far more money than just trying to move more volume.
+
+## 3. Model Performance
+To forecast net transaction revenue, a supervised Multiple Linear Regression model was trained using split validation (80% training, 20% testing). The model's predictive accuracy is highly strong, yielding an R-squared (R²) value of 0.9525. In plain business terms, this means that the model successfully explains 95.25% of the variance observed in transaction-level net revenue. 
